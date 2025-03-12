@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=SUSE:wght@100..800&family=Smooch+Sans:wght@100..900&display=swap');
+.g-FontHeader{
+    font-family: "Patrick Hand", serif;
+    font-weight: 700;
+}
+.g-Font{
+    font-family: "Patrick Hand", serif;
+    font-weight: 400;
+}
+.Custom_line{
+    height: 1px;
+    width: 100%;
+    border-top : 2px solid #30303060
+}
