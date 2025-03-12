@@ -6,6 +6,7 @@ import cors from "cors";
 
 
 const app = express();
+module.exports = app;
 const bookStoreRouter = router;
 
 //middleware
