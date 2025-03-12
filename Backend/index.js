@@ -5,8 +5,8 @@ import {router} from "./routes/bookRouter.js";
 import cors from "cors";
 
 
-const app = express();
-module.exports = app;
+export const app = express();
+
 const bookStoreRouter = router;
 
 //middleware
