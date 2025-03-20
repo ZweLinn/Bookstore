@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {router} from "./routes/bookRouter.js";
 import cors from "cors";
 
-export const app = express();
+const app = express();
 
 const bookStoreRouter = router;
 
@@ -26,3 +26,5 @@ mongoose.connect(DB_URL)
         console.log("Connected to MongoDB");
     })
     .catch((err) =>console.log(err) );
+
+export default app
