@@ -16,7 +16,7 @@ const DeleteBook= () => {
 
     async function deleteHandler(){
         try {
-            await axios.delete(`http://localhost:5000/books/${id}`)
+            await axios.delete(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books/${id}`)
                 .then(() => {
                     setLoading(false);
                     setDeleteBook(true)

@@ -12,7 +12,7 @@ import BookCard from "../component/home/BookCard.jsx";
 
 
 export default function Home(){
-    const {data , load , error} = useFetch(`http://localhost:5000/books`)
+    const {data , load , error} = useFetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books`);
     const [show, setShow] = useState(localStorage.getItem("viewMode") || "table");
 
     useEffect(() => {

@@ -8,8 +8,7 @@ import ErrorBox from "../component/ErrorBox.jsx";
 
 const ShowBook = () => {
     const {id} = useParams();
-   const {data , load , error}=useFetch(`http://localhost:5000/books/${id}`)
-
+   const {data , load , error}=useFetch(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/books/${id}`)
 
     return (
         <div>
