@@ -4,7 +4,7 @@
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
     "routes": [
     {
-      "src": "/(.*)",
+      "src": "/books(.*)",
       "dest": "backend/index.js",
       "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
     }
