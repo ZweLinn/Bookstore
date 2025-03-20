@@ -3,11 +3,10 @@
     "name": "backend",
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
     "routes": [
-    {
-      "src": "/books(.*)",
-      "dest": "backend/index.js",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
-    }
-  ]
-    
+        {
+          "src": "/(.*)",
+          "dest": "/index.js",
+          "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+        }
+      ]
 }
