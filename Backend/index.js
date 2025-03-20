@@ -1,9 +1,8 @@
 import express from 'express';
-import {PORT , DBURL}from "./config.js";
+import {PORT , DB_URL}from "./config.js";
 import mongoose from "mongoose";
 import {router} from "./routes/bookRouter.js";
 import cors from "cors";
-
 
 export const app = express();
 
@@ -22,7 +21,7 @@ app.listen(PORT , () => {
 })
 
 //DB connecting
-mongoose.connect(DBURL)
+mongoose.connect(DB_URL)
     .then(() => {
         console.log("Connected to MongoDB");
     })
