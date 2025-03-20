@@ -27,7 +27,7 @@ const EditBook = () => {
     const {id} = useParams();
 
     async function getEditBook(){
-        await  axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/${id}`)
+        await  axios.get(`http://localhost:5000/books/${id}`)
             .then((response) => {
                 setTitle(response.data.data.title);
                 setAuthor(response.data.data.author);

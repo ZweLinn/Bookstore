@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/books" ,bookStoreRouter);
 
 
-app.listen(PORT ,"0.0.0.0", () => {
+app.listen(PORT , () => {
     console.log(`Listening on port ${PORT}`);
 })
 

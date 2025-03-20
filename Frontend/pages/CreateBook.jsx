@@ -38,7 +38,7 @@ const CreateBook = () => {
         }
         else {
             try{
-                await   axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`, data)
+                await   axios.post(`http://localhost:5000/books`, data)
                     .then(()=>{
                         setLoading(false);
                         navigate('/')
